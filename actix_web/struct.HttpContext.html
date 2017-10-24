@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `HttpContext` struct in crate `actix_web`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, HttpContext">
+
+    <title>actix_web::HttpContext - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct HttpContext</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='index.html'>actix_web</a></p><script>window.sidebarCurrent = {name: 'HttpContext', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>actix_web</a>::<wbr><a class="struct" href=''>HttpContext</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/actix_web/context.rs.html#19-29' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct HttpContext&lt;A&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Actor&lt;Context = <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt;&gt; + <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>,&nbsp;</span> { /* fields omitted */ }</pre><div class='docblock'><p>Actor execution context</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl&lt;A&gt; <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Actor&lt;Context = Self&gt; + <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>,&nbsp;</span></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#85-104' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>pub fn <a href='#method.new' class='fnname'>new</a>(state: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/rc/struct.Rc.html" title="struct alloc::rc::Rc">Rc</a>&lt;&lt;A as <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>&gt;::<a class="type" href="../actix_web/dev/trait.Route.html#associatedtype.State" title="type actix_web::dev::Route::State">State</a>&gt;) -&gt; <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#87-99' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-1' class='impl'><span class='in-band'><code>impl&lt;A&gt; <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Actor&lt;Context = Self&gt; + <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>,&nbsp;</span></code><a href='#impl-1' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#106-127' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.state' class="method"><span id='state.v' class='invisible'><code>pub fn <a href='#method.state' class='fnname'>state</a>(&amp;self) -&gt; &amp;&lt;A as <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>&gt;::<a class="type" href="../actix_web/dev/trait.Route.html#associatedtype.State" title="type actix_web::dev::Route::State">State</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#109-111' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Shared application state</p>
+</div><h4 id='method.start' class="method"><span id='start.v' class='invisible'><code>pub fn <a href='#method.start' class='fnname'>start</a>&lt;R:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../actix_web/struct.HttpResponse.html" title="struct actix_web::HttpResponse">HttpResponse</a>&gt;&gt;(&amp;mut self, response: R)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#114-116' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Start response processing</p>
+</div><h4 id='method.write' class="method"><span id='write.v' class='invisible'><code>pub fn <a href='#method.write' class='fnname'>write</a>&lt;B:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="https://docs.rs/bytes/0.4/bytes/bytes/struct.Bytes.html" title="struct bytes::bytes::Bytes">Bytes</a>&gt;&gt;(&amp;mut self, data: B)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#119-121' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Write payload</p>
+</div><h4 id='method.write_eof' class="method"><span id='write_eof.v' class='invisible'><code>pub fn <a href='#method.write_eof' class='fnname'>write_eof</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#124-126' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Indicate end of streamimng payload</p>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-ActorContext&lt;A&gt;' class='impl'><span class='in-band'><code>impl&lt;A&gt; ActorContext&lt;A&gt; for <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Actor&lt;Context = Self&gt; + <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>,&nbsp;</span></code><a href='#impl-ActorContext&lt;A&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#32-54' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.stop' class="method"><span id='stop.v' class='invisible'><code>fn <a href='#method.stop' class='fnname'>stop</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#35-41' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Stop actor execution</p>
+</div><h4 id='method.terminate' class="method"><span id='terminate.v' class='invisible'><code>fn <a href='#method.terminate' class='fnname'>terminate</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#44-48' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Terminate actor execution</p>
+</div><h4 id='method.state-1' class="method"><span id='state.v-1' class='invisible'><code>fn <a href='#method.state' class='fnname'>state</a>(&amp;self) -&gt; ActorState</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#51-53' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Actor execution state</p>
+</div><h4 id='method.alive' class="method"><span id='alive.v' class='invisible'><code>fn <a href='#method.alive' class='fnname'>alive</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>Check if execution context is alive</p>
+</div><h4 id='method.address' class="method"><span id='address.v' class='invisible'><code>fn <a href='#method.address' class='fnname'>address</a>&lt;Address&gt;(&amp;mut self) -&gt; Address <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: ActorAddress&lt;A, Address&gt;,&nbsp;</span></code></span></h4>
+<div class='docblock'><p>Get actor address</p>
+</div></div><h3 id='impl-AsyncContext&lt;A&gt;' class='impl'><span class='in-band'><code>impl&lt;A&gt; AsyncContext&lt;A&gt; for <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Actor&lt;Context = Self&gt; + <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a>,&nbsp;</span></code><a href='#impl-AsyncContext&lt;A&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#56-76' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.spawn' class="method"><span id='spawn.v' class='invisible'><code>fn <a href='#method.spawn' class='fnname'>spawn</a>&lt;F&gt;(&amp;mut self, fut: F) -&gt; SpawnHandle <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: ActorFuture&lt;Item = <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.unit.html">()</a>, Error = <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.unit.html">()</a>, Actor = A&gt; + 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#58-63' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Spawn async future into context. Returns handle of the item, could be used for cancelling execution. <a href="#tymethod.spawn">Read more</a></p>
+</div><h4 id='method.wait' class="method"><span id='wait.v' class='invisible'><code>fn <a href='#method.wait' class='fnname'>wait</a>&lt;F&gt;(&amp;mut self, fut: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: ActorFuture&lt;Item = <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.unit.html">()</a>, Error = <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.unit.html">()</a>, Actor = A&gt; + 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#65-70' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Spawn future into the context. Stop processing any of incoming events until this future resolves. <a href="#tymethod.wait">Read more</a></p>
+</div><h4 id='method.cancel_future' class="method"><span id='cancel_future.v' class='invisible'><code>fn <a href='#method.cancel_future' class='fnname'>cancel_future</a>(&amp;mut self, handle: SpawnHandle) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#72-75' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Cancel future. idx is a value returned by <code>spawn</code> method.</p>
+</div><h4 id='method.add_future' class="method"><span id='add_future.v' class='invisible'><code>fn <a href='#method.add_future' class='fnname'>add_future</a>&lt;F&gt;(&amp;mut self, fut: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Handler&lt;&lt;F as <a class="trait" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html" title="trait futures::future::Future">Future</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html#associatedtype.Item" title="type futures::future::Future::Item">Item</a>, &lt;F as <a class="trait" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html" title="trait futures::future::Future">Future</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html#associatedtype.Error" title="type futures::future::Future::Error">Error</a>&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html" title="trait futures::future::Future">Future</a> + 'static,<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;F as <a class="trait" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html" title="trait futures::future::Future">Future</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/future/trait.Future.html#associatedtype.Item" title="type futures::future::Future::Item">Item</a>: ResponseType,&nbsp;</span></code></span></h4>
+<div class='docblock'><p>This method allow to handle Future in similar way as normal actor messages. <a href="#method.add_future">Read more</a></p>
+</div><h4 id='method.add_stream' class="method"><span id='add_stream.v' class='invisible'><code>fn <a href='#method.add_stream' class='fnname'>add_stream</a>&lt;S&gt;(&amp;mut self, fut: S) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Handler&lt;&lt;S as <a class="trait" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html" title="trait futures::stream::Stream">Stream</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html#associatedtype.Item" title="type futures::stream::Stream::Item">Item</a>, &lt;S as <a class="trait" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html" title="trait futures::stream::Stream">Stream</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html#associatedtype.Error" title="type futures::stream::Stream::Error">Error</a>&gt; + StreamHandler&lt;&lt;S as <a class="trait" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html" title="trait futures::stream::Stream">Stream</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html#associatedtype.Item" title="type futures::stream::Stream::Item">Item</a>, &lt;S as <a class="trait" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html" title="trait futures::stream::Stream">Stream</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html#associatedtype.Error" title="type futures::stream::Stream::Error">Error</a>&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;S: <a class="trait" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html" title="trait futures::stream::Stream">Stream</a> + 'static,<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;S as <a class="trait" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html" title="trait futures::stream::Stream">Stream</a>&gt;::<a class="type" href="https://docs.rs/futures/0.1/futures/stream/trait.Stream.html#associatedtype.Item" title="type futures::stream::Stream::Item">Item</a>: ResponseType,&nbsp;</span></code></span></h4>
+<div class='docblock'><p>This method is similar to <code>add_future</code> but works with streams. <a href="#method.add_stream">Read more</a></p>
+</div><h4 id='method.notify' class="method"><span id='notify.v' class='invisible'><code>fn <a href='#method.notify' class='fnname'>notify</a>&lt;M, E&gt;(&amp;mut self, msg: M, after: <a class="struct" href="https://doc.rust-lang.org/nightly/std/time/duration/struct.Duration.html" title="struct std::time::duration::Duration">Duration</a>) -&gt; SpawnHandle <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Handler&lt;M, E&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;E: 'static,<br>&nbsp;&nbsp;&nbsp;&nbsp;M: ResponseType + 'static,&nbsp;</span></code></span></h4>
+<div class='docblock'><p>Send message <code>msg</code> to self after specified period of time. Returns spawn handle which could be used for cancelation. <a href="#method.notify">Read more</a></p>
+</div><h4 id='method.run_later' class="method"><span id='run_later.v' class='invisible'><code>fn <a href='#method.run_later' class='fnname'>run_later</a>&lt;F&gt;(&amp;mut self, dur: <a class="struct" href="https://doc.rust-lang.org/nightly/std/time/duration/struct.Duration.html" title="struct std::time::duration::Duration">Duration</a>, f: F) -&gt; SpawnHandle <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>A, &amp;mut &lt;A as Actor&gt;::Context) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.unit.html">()</a> + 'static,&nbsp;</span></code></span></h4>
+<div class='docblock'><p>Execute closure after specified period of time within same Actor and Context</p>
+</div></div><h3 id='impl-ToEnvelope&lt;A, M&gt;' class='impl'><span class='in-band'><code>impl&lt;A, M&gt; ToEnvelope&lt;A, M&gt; for <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;A: Actor&lt;Context = <a class="struct" href="../actix_web/struct.HttpContext.html" title="struct actix_web::HttpContext">HttpContext</a>&lt;A&gt;&gt; + <a class="trait" href="../actix_web/dev/trait.Route.html" title="trait actix_web::dev::Route">Route</a> + Handler&lt;M&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;M: ResponseType + <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> + 'static,<br>&nbsp;&nbsp;&nbsp;&nbsp;M::Item: <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;M::Error: <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a>,&nbsp;</span></code><a href='#impl-ToEnvelope&lt;A, M&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#244-254' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.pack' class="method"><span id='pack.v' class='invisible'><code>fn <a href='#method.pack' class='fnname'>pack</a>(msg: M, tx: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="https://docs.rs/futures/0.1/futures/sync/oneshot/struct.Sender.html" title="struct futures::sync::oneshot::Sender">Sender</a>&lt;<a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;M::Item, M::Error&gt;&gt;&gt;) -&gt; Envelope&lt;A&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/actix_web/context.rs.html#250-253' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Pack message into envelope</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>↑</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>↓</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>↹</dt>
+                    <dd>Switch tab</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "actix_web";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>
